@@ -1,3 +1,4 @@
+import 'package:cart/Profile/settings.dart';
 import 'package:flutter/material.dart';
 import'package:cart/cart/cart.dart';
 
@@ -60,11 +61,11 @@ class _SubmitPageState extends State<SubmitPage> {
                 padding: EdgeInsets.all(10.0),
                 child: IconButton(
                     alignment: Alignment.center,
-                    icon: Icon(Icons.shopping_cart),
+                    icon: Icon(Icons.settings),
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => MyHomePage()),
+                        MaterialPageRoute(builder: (context) => Settings()),
                       );
                     }),
               ),
